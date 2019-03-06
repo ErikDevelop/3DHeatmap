@@ -13,6 +13,5 @@ public:
 	static WindowManager* getInstance();
 	void Initialise(int w, int h, const char* title);
 	void InitialiseOpenGL(int w, int h, const char* title, GLFWmonitor* monitor, GLFWwindow* share);
-	void createWindow();
-	void loadScene();
+	void runScene();
 };

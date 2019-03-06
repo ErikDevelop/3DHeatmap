@@ -10,7 +10,7 @@ float DataController::tempZ;
 float DataController::tempCelsius;
 Temperature DataController::tempTemperature = Temperature(0, 0, 0, 0);
 
-int DataController::loadData(std::string fileName) {
+int DataController::loadData(const std::string fileName) {
 	if (!loadFileContents(&fileName)) {
 		std::cout << "ERROR!: opening stream failed: " << std::endl;
 		std::cout << strerror(errno) << std::endl;
@@ -23,7 +23,7 @@ int DataController::loadData(std::string fileName) {
 	return 1;
 };
 
-int DataController::loadFileContents(std::string* fileName) {
+int DataController::loadFileContents(const std::string* fileName) {
 	std::ifstream ifs(*fileName);
 
 	if (ifs.fail()) return 0;

@@ -30,7 +30,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -43,7 +43,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -91,7 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\nlohmann\include;$(SolutionDir)Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Dependencies\nlohmann\include;$(SolutionDir)Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -109,7 +109,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\nlohmann\include;$(SolutionDir)Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Dependencies\nlohmann\include;$(SolutionDir)Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -157,14 +157,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\datacontroller.h" />
+    <ClInclude Include="dataController\datacontroller.h" />
     <ClInclude Include="openglwindowmanager.h" />
     <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\pch.h" />
-    <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\temperature.h" />
+    <ClInclude Include="temperature\temperature.h" />
     <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\windowmanager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\datacontroller.cpp" />
+    <ClCompile Include="dataController\datacontroller.cpp" />
     <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\Heatmap3D.cpp" />
     <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\openglwindowmanager.cpp" />
     <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\pch.cpp">
@@ -173,7 +173,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\temperature.cpp" />
+    <ClCompile Include="temperature\temperature.cpp" />
     <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\windowmanager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

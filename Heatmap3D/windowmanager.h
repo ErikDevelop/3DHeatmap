@@ -15,8 +15,7 @@ protected:
 public:
 	static WindowManager* getInstance();
 	virtual void Initialise(int w, int h, const char* title) = 0;
-	virtual void createWindow() = 0;
-	virtual void loadScene() = 0;
+	virtual void runScene() = 0;
 	~WindowManager()
 	{
 		instanceFlag = false;

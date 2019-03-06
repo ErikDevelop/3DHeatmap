@@ -1,2 +1,8 @@
-﻿  Heatmap3D.cpp
+﻿  datacontroller.cpp
+d:\erik\@projects\werk\sollicitatie guerrilla\heatmap\heatmap3d\heatmap3d\datacontroller\datacontroller.cpp(38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\erik\@projects\werk\sollicitatie guerrilla\heatmap\heatmap3d\heatmap3d\datacontroller\datacontroller.cpp(39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\erik\@projects\werk\sollicitatie guerrilla\heatmap\heatmap3d\heatmap3d\datacontroller\datacontroller.cpp(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\erik\@projects\werk\sollicitatie guerrilla\heatmap\heatmap3d\heatmap3d\datacontroller\datacontroller.cpp(41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Heatmap3D.cpp
+  Generating Code...
   Heatmap3D.vcxproj -> D:\Erik\@Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\x64\Debug\Heatmap3D.exe

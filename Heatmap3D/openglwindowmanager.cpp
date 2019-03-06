@@ -28,16 +28,17 @@ void OpenGLWindowManager::InitialiseOpenGL(int w, int h, const char* title, GLFW
 		std::cout << "ERROR: Failed to initialise GLFW" << std::endl;
 		return;
 	}
-}
-void OpenGLWindowManager::createWindow()
-{
+
 	window = glfwCreateWindow(width, height, titleString, glfwMonitor, glfwShareWindow);
+
 	if (!window) {
 		std::cout << "ERROR: Failed to create OpenGL Window!" << std::endl;
 		glfwTerminate();
 		return;
 	}
-
+}
+void OpenGLWindowManager::runScene()
+{
 	glfwMakeContextCurrent(window);
 
 	while (!glfwWindowShouldClose(window))
@@ -53,7 +54,3 @@ void OpenGLWindowManager::createWindow()
 	}
 	glfwTerminate();
 };
-
-void OpenGLWindowManager::loadScene() {
-	std::cout << "Guess the thread isn't blocked!" << std::endl;
-}

@@ -8,14 +8,14 @@
 #include <errno.h>
 #include <nlohmann/json.hpp>
 
-#include "temperature.h"
+#include "temperature/temperature.h"
 
 using json = nlohmann::json;
 
 class DataController
 {
 public:
-	static int loadData(std::string fileName);
+	static int loadData(const std::string fileName);
 	static std::vector<Temperature>* getEnvironmentalTemperatures();
 	static std::vector<Temperature>* getComponentTemperatures();
 private:
@@ -28,7 +28,7 @@ private:
 	static float tempCelsius;
 	static Temperature tempTemperature;
 
-	static int loadFileContents(std::string* fileName);
+	static int loadFileContents(const std::string* fileName);
 	static int deserialiseContents();
 	static int insertTemperature(std::vector<Temperature>* targetVector, Temperature* temperature);
 };
