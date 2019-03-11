@@ -186,6 +186,7 @@
     <ClCompile Include="windowManager\windowmanager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\scene\trianglescene\readme.md" />
     <None Include="res\shaders\TriangleFragmentShader.glsl" />
     <None Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\res\shaders\TriangleVertexShader.glsl" />
   </ItemGroup>
