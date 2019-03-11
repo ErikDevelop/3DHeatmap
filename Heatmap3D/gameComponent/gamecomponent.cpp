@@ -17,7 +17,6 @@ gameComponent::gameComponent(glm::mat4* parentProjection)
 
 void gameComponent::start()
 {
-	VertexArrayID;
 	glGenVertexArrays(1, &VertexArrayID);
 	glBindVertexArray(VertexArrayID);
 
@@ -82,6 +81,10 @@ void gameComponent::setOrientation(glm::quat* newOrientation)
 
 void gameComponent::regenerateMvp()
 {
+	/*
+	 * First scale, then rotation, then translation.
+	 * REMEMBER! This is expressed in reverse in the multiplication.
+	 */
 	mvp = projection * (
 		glm::translate(glm::mat4(1.0f), position) *
 		glm::toMat4(orientation));
