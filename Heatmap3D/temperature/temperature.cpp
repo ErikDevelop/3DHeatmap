@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "temperature.h"
 
 Temperature::Temperature(float x, float y, float z, float celsius) {

@@ -18,16 +18,28 @@
     <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\windowmanager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="openglwindowmanager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="dataController\datacontroller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="temperature\temperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windowManager\windowmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windowManager\openGLWindowManager\openglwindowmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\scene\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\gameComponent\gamecomponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\structs\shaderprogramsource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\shaderutils\shaderUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,17 +50,36 @@
     <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\Heatmap3D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\windowmanager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\openglwindowmanager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dataController\datacontroller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="temperature\temperature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="windowManager\windowmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windowManager\openGLWindowManager\openglwindowmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\scene\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\gameComponent\gamecomponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\shaderutils\shaderUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\trianglescene\TriangleScene.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\scene\trianglescene\TriangleScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\%40Projects\WERK\Sollicitatie Guerrilla\Heatmap\Heatmap3D\Heatmap3D\res\shaders\TriangleVertexShader.glsl" />
+    <None Include="res\shaders\TriangleFragmentShader.glsl" />
   </ItemGroup>
 </Project>

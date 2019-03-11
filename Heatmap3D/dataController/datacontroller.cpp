@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "datacontroller.h"
 
 json DataController::content;
@@ -15,22 +14,22 @@ int DataController::loadData(const std::string fileName) {
 		std::cout << "ERROR!: opening stream failed: " << std::endl;
 		std::cout << strerror(errno) << std::endl;
 
-		return 0;
+		return -1;
 	}
 
 	deserialiseContents();
 
-	return 1;
+	return 0;
 };
 
 int DataController::loadFileContents(const std::string* fileName) {
 	std::ifstream ifs(*fileName);
 
-	if (ifs.fail()) return 0;
+	if (ifs.fail()) return -1;
 
 	ifs >> content;
 
-	return 1;
+	return 0;
 };
 
 int DataController::deserialiseContents() {
@@ -46,12 +45,12 @@ int DataController::deserialiseContents() {
 		else insertTemperature(&environmentalTemperatures, &tempTemperature);
 	}
 
-	return 1;
+	return 0;
 };
 
 int DataController::insertTemperature(std::vector<Temperature>* targetVector, Temperature* temperature) {
 	(*targetVector).resize((*targetVector).size() + 1, *temperature);
-	return 1;
+	return 0;
 };
 
 std::vector<Temperature>* DataController::getEnvironmentalTemperatures() {
